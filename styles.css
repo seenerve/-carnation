@@ -1,37 +1,57 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #3f3c3c;
     font-family: 'Source Code Pro', monospace;
 }
-nav {
-    display: flex;
-    justify-content: center;
+
+header {
+    border-top: 1px solid #3f3c3c;
+    min-height: 120px;
 }
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: #000;
+}
+
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    height: 60px;
 }
 
 nav ul a {
+    padding: 15px;
     font-size: 24px;
     text-decoration: none;
     color: #fff;
+    transition: all .4s ease;
+}
+
+nav ul a:hover {
+    color: #0fc;
+    border-bottom: 1px solid #0fc;
 }
 
 nav ul li {
-    margin: 10px;
+    height: 100%;
+    margin: 0 10px;
+    animation: all 1s ease;
 }
+
 
 section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 80px auto 0;
 }
 
 footer {
