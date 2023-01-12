@@ -48,6 +48,18 @@ nav ul li {
     animation: all 1s ease;
 }
 
+.main__header {
+    font-size: 50px;
+    font-weight: normal;
+    cursor: pointer;
+    text-shadow: 0 0 15px #999;
+    color: transparent;
+    transition: all .5s;
+}
+
+.main__header:hover {
+    text-shadow: 0 0 0 #CD2682;
+}
 
 section {
     max-width: 1200px;
@@ -55,11 +67,10 @@ section {
 }
 
 footer {
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 80px;
+  height: 10px;
 }
 
 footer ul {
@@ -73,6 +84,13 @@ footer ul {
 .socialnetwork {
     margin: 10px;
 }
+
+.socialnetwork:hover {
+    fill: rgb(246, 115, 7);
+    stroke: rgb(246, 115, 7);
+    color: rgb(246, 115, 7);
+    border-bottom: 3px solid #3f3c3c;
+  }
 
 .neon-text {
   font-size: 60px;
